@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment
+venv/
+.env/
+OpsPulse/
+*.env
+
+# Data files (IMPORTANT)
+data/raw/
+data/transformed/
+data/insights/
+
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Parquet / large files
+*.parquet
+*.csv
+
+# Temporary files
+*.tmp
+*.swp

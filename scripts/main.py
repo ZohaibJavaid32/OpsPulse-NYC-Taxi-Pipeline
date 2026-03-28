@@ -18,6 +18,7 @@ if __name__ == "__main__":
         year = int(input("Enter year (e.g. 2024): "))
         
         curr_year = datetime.now().year
+        print(curr_year)
 
         if year < 1000 or year > 9999:
             logger.error(f"Invalid Year: {year}")

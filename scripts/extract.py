@@ -25,9 +25,14 @@ def download_data(year: int , month: int):
     # Create Directory for raw data if not exists.
         os.makedirs(SAVE_DIR , exist_ok=True)
 
-
-        response = requests.get(url)
-        response.raise_for_status()
+        try:
+            response = requests.get(url)
+            response.raise_for_status()
+        except requests.exceptions.HTTPError as http_err:
+            if response.status_code == 403:
+                logger.error(f"Data not available for {year}-{month} (403 Forbidden).")
+            elif response.status_code == 404:
+                
         with open(save_path , "wb")as f:
             f.write(response.content)
 

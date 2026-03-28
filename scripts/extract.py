@@ -28,20 +28,31 @@ def download_data(year: int , month: int):
         try:
             response = requests.get(url)
             response.raise_for_status()
-        except requests.exceptions.HTTPError as http_err:
-            if response.status_code == 403:
-                logger.error(f"Data not available for {year}-{month} (403 Forbidden).")
-            elif response.status_code == 404:
-                
-        with open(save_path , "wb")as f:
-            f.write(response.content)
 
-        logger.info(f"Download Completed! Saved to path {save_path}.")
-        return save_path
+            if response.status_code != 200:
+                logger.error(f"Unexpected Status Code: {response.status_code}.")
+        except requests.exceptions.HTTPError as http_err:
+            status_code = http_err.response.status_code
+
+            if status_code == 403:
+                logger.error(f"Data not available for {year}-{month} (403 Forbidden).")
+            elif status_code == 404:
+                logger.error(f"File not Found for {year}-{month} (404).")
+            else:
+                logger.error(f"HTTP Error: {http_err}.")
+            
+            return None
     
     except Exception as e:
-        logger.error("Download Failed: {e}")
-        raise
+        logger.error(f"Download Failed: {e}")
+        return None
+
+    with open(save_path , "wb")as f:
+            f.write(response.content)
+
+    logger.info(f"Download Completed! Saved to path {save_path}.")
+    return save_path
+    
 if __name__ == "__main__":
     try:
         year = int(input("Enter year (e.g. 2024): "))

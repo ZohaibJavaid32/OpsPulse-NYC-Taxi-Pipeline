@@ -3,6 +3,7 @@ from transform import transform_data
 from load import load_insights
 import sys
 import matplotlib
+from datetime import datetime
 from logger import setup_logger
 import logging 
 
@@ -15,14 +16,19 @@ logger = logging.getLogger("MAIN MODULE")
 if __name__ == "__main__":
     try:
         year = int(input("Enter year (e.g. 2024): "))
+        
+        curr_year = datetime.now().year
 
         if year < 1000 or year > 9999:
-            print("Invalid Year!")
+            logger.error(f"Invalid Year: {year}")
+            sys.exit()
+        if year > curr_year:
+            logger.error(f"Year Cannot be Greater than Current Year. {year}")
             sys.exit()
 
         month = int(input("Enter Month (e.g. 12): "))
         if month < 1 or month > 12:
-            print("Invalid Month!")
+            logger.error("Invalid Month!")
             sys.exit()
     except KeyboardInterrupt:
         print("Program Interrupted by User.")

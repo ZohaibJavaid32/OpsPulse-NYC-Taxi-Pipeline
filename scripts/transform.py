@@ -8,7 +8,7 @@ setup_logger()
 
 logger = logging.getLogger("TRANSFORM MODULE")
 
-def transform_data(input_path:str , output_dir: str = "data/transformed") -> pd.DataFrame:
+def transform_data(input_path:str , output_dir: str = r"data\\transformed") -> pd.DataFrame:
     """
     Transform raw NYC Taxi data:
     - Handle missing values
@@ -32,6 +32,9 @@ def transform_data(input_path:str , output_dir: str = "data/transformed") -> pd.
     "payment_type"
     ])
 
+    # Drop Duplicates
+    df = df.drop_duplicates()
+    
     # Fill Missing Values
     df["passenger_count"] = df["passenger_count"].fillna(1)
     df["RatecodeID"] = df["RatecodeID"].fillna(1)

@@ -25,3 +25,130 @@
 2026-03-26 15:13:39 - LOAD MODULE - INFO - Insights Saved data/insights
 2026-03-27 19:18:02 - LOAD MODULE - INFO - Generating Insights...
 2026-03-27 19:18:02 - LOAD MODULE - INFO - Insights Saved data/insights
+2026-03-28 00:44:33 - EXTRACT MODULE - INFO - Starting Download for 2024-08...
+2026-03-28 00:44:33 - EXTRACT MODULE - DEBUG - URL: https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-08.parquet
+2026-03-28 00:44:33 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): d37ci6vzurychx.cloudfront.net:443
+2026-03-28 00:44:34 - urllib3.connectionpool - DEBUG - https://d37ci6vzurychx.cloudfront.net:443 "GET /trip-data/yellow_tripdata_2024-08.parquet HTTP/1.1" 200 51067350
+2026-03-28 00:44:39 - EXTRACT MODULE - INFO - Download Completed! Saved to path data/raw\yellow_tripdata_2024-08.parquet.
+2026-03-28 00:45:09 - TRANSFORM MODULE - INFO - Reading Data from Raw File: data/raw/yellow_tripdata_2024-08.parquet...
+2026-03-28 00:45:13 - TRANSFORM MODULE - INFO - Transformed File Saved to data/transformed\yellow_tripdata_2024-08.parquet.
+2026-03-28 00:45:38 - LOAD MODULE - INFO - Generating Insights...
+2026-03-28 00:45:38 - LOAD MODULE - INFO - Insights Saved data/insights
+2026-03-28 00:59:00 - EXTRACT MODULE - INFO - Starting Download for 2024-08...
+2026-03-28 00:59:00 - EXTRACT MODULE - DEBUG - URL: https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-08.parquet
+2026-03-28 00:59:00 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): d37ci6vzurychx.cloudfront.net:443
+2026-03-28 00:59:01 - urllib3.connectionpool - DEBUG - https://d37ci6vzurychx.cloudfront.net:443 "GET /trip-data/yellow_tripdata_2024-08.parquet HTTP/1.1" 200 51067350
+2026-03-28 00:59:06 - EXTRACT MODULE - INFO - Download Completed! Saved to path data/raw\yellow_tripdata_2024-08.parquet.
+2026-03-28 01:00:33 - EXTRACT MODULE - INFO - Starting Download for 2024-08...
+2026-03-28 01:00:33 - EXTRACT MODULE - DEBUG - URL: https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-08.parquet
+2026-03-28 01:00:33 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): d37ci6vzurychx.cloudfront.net:443
+2026-03-28 01:00:34 - urllib3.connectionpool - DEBUG - https://d37ci6vzurychx.cloudfront.net:443 "GET /trip-data/yellow_tripdata_2024-08.parquet HTTP/1.1" 200 51067350
+2026-03-28 01:00:39 - EXTRACT MODULE - INFO - Download Completed! Saved to path data\raw\yellow_tripdata_2024-08.parquet.
+2026-03-28 01:01:24 - matplotlib - DEBUG - matplotlib data path: D:\Data Engineering\OpsPulse-NYC-Taxi-Pipeline\.venv\Lib\site-packages\matplotlib\mpl-data
+2026-03-28 01:01:24 - matplotlib - DEBUG - CONFIGDIR=C:\Users\mzohaib01\.matplotlib
+2026-03-28 01:01:24 - matplotlib - DEBUG - interactive is False
+2026-03-28 01:01:24 - matplotlib - DEBUG - platform is win32
+2026-03-28 01:01:24 - matplotlib - DEBUG - CACHEDIR=C:\Users\mzohaib01\.matplotlib
+2026-03-28 01:01:24 - matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\mzohaib01\.matplotlib\fontlist-v390.json
+2026-03-28 01:01:56 - root - INFO - Extracting Data...
+2026-03-28 01:01:56 - EXTRACT MODULE - INFO - Starting Download for 2024-08...
+2026-03-28 01:01:56 - EXTRACT MODULE - DEBUG - URL: https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-08.parquet
+2026-03-28 01:01:56 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): d37ci6vzurychx.cloudfront.net:443
+2026-03-28 01:01:57 - urllib3.connectionpool - DEBUG - https://d37ci6vzurychx.cloudfront.net:443 "GET /trip-data/yellow_tripdata_2024-08.parquet HTTP/1.1" 200 51067350
+2026-03-28 01:02:02 - EXTRACT MODULE - INFO - Download Completed! Saved to path data\raw\yellow_tripdata_2024-08.parquet.
+2026-03-28 01:04:24 - matplotlib - DEBUG - matplotlib data path: D:\Data Engineering\OpsPulse-NYC-Taxi-Pipeline\.venv\Lib\site-packages\matplotlib\mpl-data
+2026-03-28 01:04:24 - matplotlib - DEBUG - CONFIGDIR=C:\Users\mzohaib01\.matplotlib
+2026-03-28 01:04:24 - matplotlib - DEBUG - interactive is False
+2026-03-28 01:04:24 - matplotlib - DEBUG - platform is win32
+2026-03-28 01:04:24 - matplotlib - DEBUG - CACHEDIR=C:\Users\mzohaib01\.matplotlib
+2026-03-28 01:04:24 - matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\mzohaib01\.matplotlib\fontlist-v390.json
+2026-03-28 01:04:33 - matplotlib - DEBUG - matplotlib data path: D:\Data Engineering\OpsPulse-NYC-Taxi-Pipeline\.venv\Lib\site-packages\matplotlib\mpl-data
+2026-03-28 01:04:33 - matplotlib - DEBUG - CONFIGDIR=C:\Users\mzohaib01\.matplotlib
+2026-03-28 01:04:33 - matplotlib - DEBUG - interactive is False
+2026-03-28 01:04:33 - matplotlib - DEBUG - platform is win32
+2026-03-28 01:04:33 - matplotlib - DEBUG - CACHEDIR=C:\Users\mzohaib01\.matplotlib
+2026-03-28 01:04:33 - matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\mzohaib01\.matplotlib\fontlist-v390.json
+2026-03-28 01:04:56 - root - INFO - Extracting Data...
+2026-03-28 01:04:56 - EXTRACT MODULE - INFO - Starting Download for 2024-07...
+2026-03-28 01:04:56 - EXTRACT MODULE - DEBUG - URL: https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-07.parquet
+2026-03-28 01:04:56 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): d37ci6vzurychx.cloudfront.net:443
+2026-03-28 01:04:56 - urllib3.connectionpool - DEBUG - https://d37ci6vzurychx.cloudfront.net:443 "GET /trip-data/yellow_tripdata_2024-07.parquet HTTP/1.1" 200 52299432
+2026-03-28 01:05:02 - EXTRACT MODULE - INFO - Download Completed! Saved to path data\raw\yellow_tripdata_2024-07.parquet.
+2026-03-28 01:06:29 - matplotlib - DEBUG - matplotlib data path: D:\Data Engineering\OpsPulse-NYC-Taxi-Pipeline\.venv\Lib\site-packages\matplotlib\mpl-data
+2026-03-28 01:06:29 - matplotlib - DEBUG - CONFIGDIR=C:\Users\mzohaib01\.matplotlib
+2026-03-28 01:06:29 - matplotlib - DEBUG - interactive is False
+2026-03-28 01:06:29 - matplotlib - DEBUG - platform is win32
+2026-03-28 01:06:29 - matplotlib - DEBUG - CACHEDIR=C:\Users\mzohaib01\.matplotlib
+2026-03-28 01:06:29 - matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\mzohaib01\.matplotlib\fontlist-v390.json
+2026-03-28 01:06:34 - root - INFO - Extracting Data...
+2026-03-28 01:06:34 - EXTRACT MODULE - INFO - Starting Download for 2024-08...
+2026-03-28 01:06:34 - EXTRACT MODULE - DEBUG - URL: https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-08.parquet
+2026-03-28 01:06:34 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): d37ci6vzurychx.cloudfront.net:443
+2026-03-28 01:06:35 - urllib3.connectionpool - DEBUG - https://d37ci6vzurychx.cloudfront.net:443 "GET /trip-data/yellow_tripdata_2024-08.parquet HTTP/1.1" 200 51067350
+2026-03-28 01:06:39 - EXTRACT MODULE - INFO - Download Completed! Saved to path data\raw\yellow_tripdata_2024-08.parquet.
+2026-03-28 01:06:39 - root - INFO - Transforming Data...
+2026-03-28 01:06:39 - TRANSFORM MODULE - INFO - Reading Data from Raw File: data\raw\yellow_tripdata_2024-08.parquet...
+2026-03-28 01:06:42 - TRANSFORM MODULE - INFO - Transformed File Saved to data/transformed\yellow_tripdata_2024-08.parquet.
+2026-03-28 01:07:10 - matplotlib - DEBUG - matplotlib data path: D:\Data Engineering\OpsPulse-NYC-Taxi-Pipeline\.venv\Lib\site-packages\matplotlib\mpl-data
+2026-03-28 01:07:10 - matplotlib - DEBUG - CONFIGDIR=C:\Users\mzohaib01\.matplotlib
+2026-03-28 01:07:10 - matplotlib - DEBUG - interactive is False
+2026-03-28 01:07:10 - matplotlib - DEBUG - platform is win32
+2026-03-28 01:07:10 - matplotlib - DEBUG - CACHEDIR=C:\Users\mzohaib01\.matplotlib
+2026-03-28 01:07:10 - matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\mzohaib01\.matplotlib\fontlist-v390.json
+2026-03-28 01:07:14 - root - INFO - Extracting Data...
+2026-03-28 01:07:14 - EXTRACT MODULE - INFO - Starting Download for 2024-08...
+2026-03-28 01:07:14 - EXTRACT MODULE - DEBUG - URL: https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-08.parquet
+2026-03-28 01:07:14 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): d37ci6vzurychx.cloudfront.net:443
+2026-03-28 01:07:15 - urllib3.connectionpool - DEBUG - https://d37ci6vzurychx.cloudfront.net:443 "GET /trip-data/yellow_tripdata_2024-08.parquet HTTP/1.1" 200 51067350
+2026-03-28 01:07:20 - EXTRACT MODULE - INFO - Download Completed! Saved to path data\raw\yellow_tripdata_2024-08.parquet.
+2026-03-28 01:07:20 - root - INFO - Transforming Data...
+2026-03-28 01:07:20 - TRANSFORM MODULE - INFO - Reading Data from Raw File: data\raw\yellow_tripdata_2024-08.parquet...
+2026-03-28 01:07:22 - TRANSFORM MODULE - INFO - Transformed File Saved to data\transformed\yellow_tripdata_2024-08.parquet.
+2026-03-28 01:07:40 - matplotlib - DEBUG - matplotlib data path: D:\Data Engineering\OpsPulse-NYC-Taxi-Pipeline\.venv\Lib\site-packages\matplotlib\mpl-data
+2026-03-28 01:07:40 - matplotlib - DEBUG - CONFIGDIR=C:\Users\mzohaib01\.matplotlib
+2026-03-28 01:07:40 - matplotlib - DEBUG - interactive is False
+2026-03-28 01:07:40 - matplotlib - DEBUG - platform is win32
+2026-03-28 01:07:40 - matplotlib - DEBUG - CACHEDIR=C:\Users\mzohaib01\.matplotlib
+2026-03-28 01:07:40 - matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\mzohaib01\.matplotlib\fontlist-v390.json
+2026-03-28 01:07:43 - root - INFO - Extracting Data...
+2026-03-28 01:07:43 - EXTRACT MODULE - INFO - Starting Download for 2024-08...
+2026-03-28 01:07:43 - EXTRACT MODULE - DEBUG - URL: https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-08.parquet
+2026-03-28 01:07:43 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): d37ci6vzurychx.cloudfront.net:443
+2026-03-28 01:07:44 - urllib3.connectionpool - DEBUG - https://d37ci6vzurychx.cloudfront.net:443 "GET /trip-data/yellow_tripdata_2024-08.parquet HTTP/1.1" 200 51067350
+2026-03-28 01:07:49 - EXTRACT MODULE - INFO - Download Completed! Saved to path data\raw\yellow_tripdata_2024-08.parquet.
+2026-03-28 01:07:49 - root - INFO - Transforming Data...
+2026-03-28 01:07:49 - TRANSFORM MODULE - INFO - Reading Data from Raw File: data\raw\yellow_tripdata_2024-08.parquet...
+2026-03-28 01:07:51 - TRANSFORM MODULE - INFO - Transformed File Saved to data\\transformed\yellow_tripdata_2024-08.parquet.
+2026-03-28 01:08:03 - matplotlib - DEBUG - matplotlib data path: D:\Data Engineering\OpsPulse-NYC-Taxi-Pipeline\.venv\Lib\site-packages\matplotlib\mpl-data
+2026-03-28 01:08:03 - matplotlib - DEBUG - CONFIGDIR=C:\Users\mzohaib01\.matplotlib
+2026-03-28 01:08:03 - matplotlib - DEBUG - interactive is False
+2026-03-28 01:08:03 - matplotlib - DEBUG - platform is win32
+2026-03-28 01:08:03 - matplotlib - DEBUG - CACHEDIR=C:\Users\mzohaib01\.matplotlib
+2026-03-28 01:08:03 - matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\mzohaib01\.matplotlib\fontlist-v390.json
+2026-03-28 01:08:07 - root - INFO - Extracting Data...
+2026-03-28 01:08:07 - EXTRACT MODULE - INFO - Starting Download for 2024-07...
+2026-03-28 01:08:07 - EXTRACT MODULE - DEBUG - URL: https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-07.parquet
+2026-03-28 01:08:07 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): d37ci6vzurychx.cloudfront.net:443
+2026-03-28 01:08:07 - urllib3.connectionpool - DEBUG - https://d37ci6vzurychx.cloudfront.net:443 "GET /trip-data/yellow_tripdata_2024-07.parquet HTTP/1.1" 200 52299432
+2026-03-28 01:08:12 - EXTRACT MODULE - INFO - Download Completed! Saved to path data\raw\yellow_tripdata_2024-07.parquet.
+2026-03-28 01:08:12 - root - INFO - Transforming Data...
+2026-03-28 01:08:12 - TRANSFORM MODULE - INFO - Reading Data from Raw File: data\raw\yellow_tripdata_2024-07.parquet...
+2026-03-28 01:08:14 - TRANSFORM MODULE - INFO - Transformed File Saved to data\\transformed\yellow_tripdata_2024-07.parquet.
+2026-03-28 01:10:30 - matplotlib - DEBUG - matplotlib data path: D:\Data Engineering\OpsPulse-NYC-Taxi-Pipeline\.venv\Lib\site-packages\matplotlib\mpl-data
+2026-03-28 01:10:30 - matplotlib - DEBUG - CONFIGDIR=C:\Users\mzohaib01\.matplotlib
+2026-03-28 01:10:30 - matplotlib - DEBUG - interactive is False
+2026-03-28 01:10:30 - matplotlib - DEBUG - platform is win32
+2026-03-28 01:10:30 - matplotlib - DEBUG - CACHEDIR=C:\Users\mzohaib01\.matplotlib
+2026-03-28 01:10:30 - matplotlib.font_manager - DEBUG - Using fontManager instance from C:\Users\mzohaib01\.matplotlib\fontlist-v390.json
+2026-03-28 01:10:35 - root - INFO - Extracting Data...
+2026-03-28 01:10:35 - EXTRACT MODULE - INFO - Starting Download for 2024-07...
+2026-03-28 01:10:35 - EXTRACT MODULE - DEBUG - URL: https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-07.parquet
+2026-03-28 01:10:35 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): d37ci6vzurychx.cloudfront.net:443
+2026-03-28 01:10:36 - urllib3.connectionpool - DEBUG - https://d37ci6vzurychx.cloudfront.net:443 "GET /trip-data/yellow_tripdata_2024-07.parquet HTTP/1.1" 200 52299432
+2026-03-28 01:10:41 - EXTRACT MODULE - INFO - Download Completed! Saved to path data\raw\yellow_tripdata_2024-07.parquet.
+2026-03-28 01:10:41 - root - INFO - Transforming Data...
+2026-03-28 01:10:41 - TRANSFORM MODULE - INFO - Reading Data from Raw File: data\raw\yellow_tripdata_2024-07.parquet...
+2026-03-28 01:10:43 - TRANSFORM MODULE - INFO - Transformed File Saved to data\\transformed\yellow_tripdata_2024-07.parquet.
+2026-03-28 01:10:43 - root - INFO - Generating and Loading Insights...
+2026-03-28 01:10:43 - LOAD MODULE - INFO - Generating Insights...
+2026-03-28 01:10:43 - LOAD MODULE - INFO - Insights Saved data/insights

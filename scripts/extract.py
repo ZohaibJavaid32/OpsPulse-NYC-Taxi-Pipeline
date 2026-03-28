@@ -32,6 +32,8 @@ def download_data(year: int , month: int):
             f.write(response.content)
 
         logger.info(f"Download Completed! Saved to path {save_path}.")
+        return save_path
+    
     except Exception as e:
         logger.error("Download Failed: {e}")
         raise

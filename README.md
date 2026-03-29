@@ -48,3 +48,22 @@ OpsPulse-NYC-Taxi-Pipeline/
 ├── requirements.txt
 └── README.md
 ```
+## 🚀 How It Works
+
+### 1. Extract
+- Downloads NYC taxi data (Parquet format)
+- Handles HTTP errors (403, 404)
+- Logs download activity
+  
+### 2. Transform
+- Cleans data
+- Removes duplicates
+- Performs aggregations (e.g., revenue per day)
+  
+### 3. Load
+- Stores processed data for analysis in JSON format.
+  
+### 4. Orchestration
+- `main.py` controls the pipeline
+- Implements fail-fast strategy
+- Stops execution if any step fails

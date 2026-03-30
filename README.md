@@ -67,3 +67,48 @@ OpsPulse-NYC-Taxi-Pipeline/
 - `main.py` controls the pipeline
 - Implements fail-fast strategy
 - Stops execution if any step fails
+
+## 🛠️ Setup Instructions
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/your-username/OpsPulse-NYC-Taxi-Pipeline.git
+```
+
+```bash
+cd OpsPulse-NYC-Taxi-Pipeline
+```
+
+---
+
+### 2. Create Virtual Environment
+
+```bash
+uv venv
+```
+
+---
+
+### 3. Activate Environment (Windows)
+
+```cmd
+.venv\Scripts\activate
+```
+
+---
+
+### 4. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### Run the Pipeline
+
+```bash
+python scripts/main.py
+```
+

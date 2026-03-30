@@ -64,7 +64,7 @@ The transformed data is stored in:
 This enables easy analysis and reporting.
 
 
-## 📌 Project Overview
+# 📌 Project Overview
 
 This project demonstrates a complete ETL (Extract, Transform, Load) workflow:
 - Extracts NYC taxi data from a public dataset for prompted year and month.
@@ -86,7 +86,7 @@ Built with a focus on:
 - Logging
 - Parquet
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```
 OpsPulse-NYC-Taxi-Pipeline/

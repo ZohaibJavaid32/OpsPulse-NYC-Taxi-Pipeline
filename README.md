@@ -1,6 +1,69 @@
 # 🚖 OpsPulse-NYC-Taxi-Pipeline
 A modular ETL pipeline that extracts, transforms, and analyzes NYC taxi trip data.
 
+### 📥 Data Ingestion & Transformation
+
+###  What Data is Ingested?
+
+The pipeline ingests **NYC Yellow Taxi Trip data** in Parquet format from a public dataset.
+
+This dataset includes:
+
+* Pickup and drop-off timestamps
+* Trip distance
+* Fare amount and total amount
+* Payment type
+* Pickup and drop-off locations
+
+---
+
+### Why This Data Exists?
+
+This dataset is published to:
+
+* Provide transparency into NYC taxi operations
+* Enable data analysis for transportation trends
+* Support research and business decision-making
+* Help optimize traffic, pricing, and city planning
+
+---
+
+### How the Data is Transformed
+
+After extraction, the raw data goes through several transformation steps:
+
+* **Data Cleaning**
+
+  * Remove duplicate records
+  * Handle missing or invalid values
+
+* **Feature Engineering**
+
+  * Extract pickup day from timestamp
+  * Create new fields for analysis
+
+* **Aggregation**
+
+  * Calculate **revenue per day**
+  * Generate business-level insights
+
+* **Validation**
+
+  * Ensure correct data types
+  * Filter out invalid records
+
+---
+
+### Output
+
+The transformed data is stored in:
+
+* `data/processed/` → Cleaned dataset
+* `data/insights/` → Aggregated metrics (e.g., revenue per day)
+
+This enables easy analysis and reporting.
+
+
 ## 📌 Project Overview
 
 This project demonstrates a complete ETL (Extract, Transform, Load) workflow:

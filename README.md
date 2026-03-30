@@ -25,7 +25,6 @@ This dataset is published to:
 * Support research and business decision-making
 * Help optimize traffic, pricing, and city planning
 
----
 
 #### How the Data is Transformed
 

@@ -15,7 +15,6 @@ This dataset includes:
 * Payment type
 * Pickup and drop-off locations
 
----
 
 #### Why This Data Exists?
 
@@ -52,7 +51,6 @@ After extraction, the raw data goes through several transformation steps:
   * Ensure correct data types
   * Filter out invalid records
 
----
 
 #### Output
 

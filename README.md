@@ -3,7 +3,7 @@ A modular ETL pipeline that extracts, transforms, and analyzes NYC taxi trip dat
 
 ### 📥 Data Ingestion & Transformation
 
-###  What Data is Ingested?
+####  What Data is Ingested?
 
 The pipeline ingests **NYC Yellow Taxi Trip data** in Parquet format from a public dataset.
 
@@ -17,7 +17,7 @@ This dataset includes:
 
 ---
 
-### Why This Data Exists?
+#### Why This Data Exists?
 
 This dataset is published to:
 
@@ -28,7 +28,7 @@ This dataset is published to:
 
 ---
 
-### How the Data is Transformed
+#### How the Data is Transformed
 
 After extraction, the raw data goes through several transformation steps:
 
@@ -54,7 +54,7 @@ After extraction, the raw data goes through several transformation steps:
 
 ---
 
-### Output
+#### Output
 
 The transformed data is stored in:
 

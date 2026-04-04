@@ -1,7 +1,7 @@
 import pandas as pd
 import logging
 import os
-from logger import setup_logger
+from scripts.logger import setup_logger
 
 
 setup_logger()
@@ -29,6 +29,7 @@ def transform_data(input_path:str , output_dir: str = r"data\\transformed") -> p
     "PULocationID",
     "DOLocationID",
     "fare_amount",
+    "congestion_surcharge",
     "payment_type"
     ])
 

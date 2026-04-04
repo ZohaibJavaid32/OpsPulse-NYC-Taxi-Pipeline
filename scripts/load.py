@@ -4,7 +4,7 @@ import logging
 import json
 import seaborn as sns
 import matplotlib.pyplot as plt
-from logger import setup_logger
+from scripts.logger import setup_logger
 
 setup_logger()
 

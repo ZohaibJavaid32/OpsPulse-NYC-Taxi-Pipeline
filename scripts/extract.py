@@ -3,7 +3,7 @@ import os
 import sys
 from config import BASE_URL , SAVE_DIR
 import logging
-from logger import setup_logger
+from scripts.logger import setup_logger
 
 setup_logger()
 

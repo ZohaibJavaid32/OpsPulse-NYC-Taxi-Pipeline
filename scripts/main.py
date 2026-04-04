@@ -1,10 +1,10 @@
-from extract import download_data
-from transform import transform_data
-from load import load_insights
+from scripts.extract import download_data
+from scripts.transform import transform_data
+from scripts.load import load_insights
 import sys
 import matplotlib
 from datetime import datetime
-from logger import setup_logger
+from scripts.logger import setup_logger
 import logging 
 
 

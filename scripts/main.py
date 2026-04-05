@@ -1,6 +1,8 @@
 from scripts.extract import download_data
 from scripts.transform import transform_data
 from scripts.load import load_insights
+from scripts.db.connection import get_sql_connection
+from scripts.db.database import insert_taxi_data
 import sys
 import matplotlib
 from datetime import datetime
@@ -30,15 +32,22 @@ def take_input():
         if month < 1 or month > 12:
             logger.error("Invalid Month!")
             sys.exit()
+
+        return (year , month)
     except KeyboardInterrupt:
         print("Program Interrupted by User.")
+        return None
     except ValueError:
         print("Please Enter Valid Numeric Input!")
+        return None
 
-    return (year , month)
+    
 if __name__ == "__main__":
 
-    year, month = take_input()
+    result = take_input()
+    if result is None:
+        sys.exit()
+    year, month = result
 
     logging.info("Extracting Data...")
 
@@ -47,7 +56,14 @@ if __name__ == "__main__":
         logger.info("Extraction Failed. Pipeline Stopping...")
         sys.exit(1)
     logging.info("Transforming Data...")
-    transformed_df = transform_data(raw_file)
+    transformed_file_path = transform_data(raw_file)
 
-    logging.info("Generating and Loading Insights...")
-    load_insights(transformed_df)
+    try:
+        with get_sql_connection() as conn:
+            cursor = conn.cursor
+
+            insert_taxi_data(conn , transformed_file_path)
+            conn.commit()
+    except Exception as e:
+        logger.error(f"DB Connection Failed. {e}")
+    

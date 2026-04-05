@@ -81,7 +81,7 @@ if __name__ == "__main__":
             insert_taxi_data(conn , "data\\transformed\yellow_tripdata_2024-08.parquet")
             conn.commit()
             
-            print("✅ Database Connection Successfull.")
+            #print("✅ Database Connection Successfull.")
     except Exception as e:
         print(f"Connection Failed {e}")
     

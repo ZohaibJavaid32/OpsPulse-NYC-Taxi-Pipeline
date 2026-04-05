@@ -8,7 +8,7 @@ setup_logger()
 
 logger = logging.getLogger("TRANSFORM MODULE")
 
-def transform_data(input_path:str , output_dir: str = r"data\\transformed") -> pd.DataFrame:
+def transform_data(input_path:str , output_dir: str = r"data\\transformed") -> str:
     """
     Transform raw NYC Taxi data:
     - Handle missing values
@@ -91,7 +91,7 @@ def transform_data(input_path:str , output_dir: str = r"data\\transformed") -> p
     df.to_parquet(output_file , index=False)
     logger.info(f"Transformed File Saved to {output_file}.")
 
-    return df
+    return output_file
 
 if __name__ == "__main__":
     RAW_FILE = "data/raw/yellow_tripdata_2024-08.parquet"

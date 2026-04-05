@@ -1,7 +1,7 @@
 import requests
 import os
 import sys
-from config import BASE_URL , SAVE_DIR
+from scripts.config import BASE_URL , SAVE_DIR
 import logging
 from scripts.logger import setup_logger
 
@@ -10,8 +10,16 @@ setup_logger()
 logger = logging.getLogger("EXTRACT MODULE")
 
 
-def download_data(year: int , month: int):
+def download_data(year: int , month: int) -> str:
 
+    """
+        Download data for prompted month and year and save parquet file.
+        Args:
+            year  
+            month
+        Returns:
+            path of saved parquet file.  
+    """
     month = str(month).zfill(2)
 
     url = BASE_URL.format(year=year, month=month)

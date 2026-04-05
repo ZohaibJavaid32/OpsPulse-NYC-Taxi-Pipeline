@@ -56,10 +56,12 @@ def transform_data(input_path:str , output_dir: str = r"data\\transformed") -> s
     df["fare_per_km"] = df["fare_amount"] / df["trip_distance"]
 
     df = df[
-    (df["trip_duration_min"] > 0) & 
-    (df["trip_duration_min"] < 1440) &
-    (df["trip_distance"] > 0)
-    ]
+        (df["trip_duration_min"] > 0) & 
+        (df["trip_duration_min"] < 1440) &
+        (df["trip_distance"] > 0) &
+        (df["trip_speed_kmh"] > 0) &
+        (df["trip_speed_kmh"] <= 120)
+        ]
 
     # Final Columns
 

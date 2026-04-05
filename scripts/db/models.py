@@ -27,6 +27,8 @@ def create_table(cursor: pyodbc.Cursor) -> None:
         pickup_hour INT,
         pickup_day VARCHAR(20),
         trip_distance FLOAT,
+        POLocationID INT,
+        DOLocationID INT,
         trip_duration_min FLOAT,
         trip_speed_kmh FLOAT,
         fare_amount FLOAT,

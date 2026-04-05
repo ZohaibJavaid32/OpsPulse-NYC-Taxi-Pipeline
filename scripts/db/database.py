@@ -36,10 +36,10 @@ def insert_taxi_data(connection:pyodbc.Connection , file_path:str) -> int:
 
         insert_query = f"""
         INSERT INTO {TABLE_NAME} 
-        (tpep_pickup_datetime,tpep_dropoff_datetime,pickup_hour,pickup_day,trip_distance,trip_duration_min,
+        (tpep_pickup_datetime,tpep_dropoff_datetime,pickup_hour,pickup_day,trip_distance,POLocationID , DOLocationID,trip_duration_min,
         trip_speed_kmh,fare_amount,fare_per_km,passenger_count,extra,mta_tax,tip_amount,tolls_amount,
         improvement_surcharge,congestion_surcharge,total_amount) 
-        VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
+        VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)
         """
         
         logger.info(f"Reading Data from Parquet File")

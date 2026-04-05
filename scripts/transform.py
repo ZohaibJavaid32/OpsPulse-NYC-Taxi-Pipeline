@@ -26,16 +26,11 @@ def transform_data(input_path:str , output_dir: str = r"data\\transformed") -> s
     "tpep_pickup_datetime",
     "tpep_dropoff_datetime",
     "trip_distance",
-    "PULocationID",
-    "DOLocationID",
     "fare_amount",
     "congestion_surcharge",
     "payment_type"
     ])
 
-    # Drop Duplicates
-    df = df.drop_duplicates()
-    
     # Fill Missing Values
     df["passenger_count"] = df["passenger_count"].fillna(1)
     df["RatecodeID"] = df["RatecodeID"].fillna(1)
@@ -72,6 +67,8 @@ def transform_data(input_path:str , output_dir: str = r"data\\transformed") -> s
         "pickup_hour",
         "pickup_day",
         "trip_distance",
+        "PULocationID",
+        "DOLocationID",	
         "trip_duration_min",
         "trip_speed_kmh",
         "fare_amount",
